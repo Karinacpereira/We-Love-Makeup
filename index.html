@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="./dist/assets/icon.png" type="image/x-icon"/>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Courgette|Libre+Baskerville" rel="stylesheet">
+  <link href="https://file.myfontastic.com/cuWy4RZS58Xiy3gixx4q9Q/icons.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="./dist/css/style.css"/>
+  <script src="./dist/js/firebase.js"></script>
+  <title>We Love Makeup</title>
+  <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-database.js"></script>
+</head>
+<body>
+
+  <header class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <img src="./dist/assets/logo.png" alt="">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+         
+      <div class="collapse navbar-collapse ml-5 pl-5" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">Sobre Nós</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/products">Produtos</a>
+          </li>
+        </ul>
+            
+        <div class="ml-5 mr-2">
+          <ul>
+            <li class="cart nav-item mt-2">
+              <a class="buy nav-link btn-outline-success" href="/cart"><i class="icon-cash-register"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+    <section id="capa">
+      <img class="d-block w-100" src="./dist/assets/capa.png" alt="">
+    </section>
+  </header>
+
+
+  <main class="main ml-3 mr-3">
+    <section class="videos">
+      <div class="pt-5 pb-5 d-flex flex-row align-items-center justify-content-around" id="video">
+        <div class="col-6">
+          <iframe width="672" height="380" src="https://www.youtube.com/embed/pOVyiiWQ1oM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="d-flex flex-column col-4">
+          <h3>OS PIORES ERROS NA HORA DE FAZER SUA MAQUIAGEM</h3>
+          <p>Olha que belezinha de vídeo... aperta o play para conferir aqueles erros que podem transformar sua make baphonica no maior mico!</p>
+        </div>
+      </div>
+      <div class="pt-5 pb-5 d-flex flex-row align-items-center justify-content-around" id="video">
+        <div class="d-flex flex-column col-4">
+          <h3>10 TRUQUES PARA APLICAR CILIOS POSTIÇOS</h3>
+          <p>Se você também sofre toda vez que decide colocar cílios postiços, não deixa de dar um play e conferir essas dicas maravilhosas!</p>
+        </div>
+        <div class="col-6">
+          <iframe width="672" height="380" src="https://www.youtube.com/embed/z8qESA-wABo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main ml-3 mr-3">
+    <div class="footer">
+      <div class="footer1">
+        <div class="container-fluid">
+          <div class="container ">
+            <div class="row">
+              <div class="col-sm-4">
+                <h2>Links</h2>
+                  <p>
+                    <i class="icon-home"></i><a href="#">  Home</a><br>
+                    <i class="icon-user-1"></i><a href="#">  Sobre Nós</a><br>
+                    <i class="icon-restaurant"></i><a href="#">  Produtos</a><br>
+                    <i class="icon-address-book"></i><a href="#">  Contatos</a><br>
+                    <i class="icon-notes"></i><a href="#">  Termos & Condições</a><br>
+                    <br>
+                  </p>
+                  <br>
+                </div>
+                <div class="col-sm-4">
+                  <h2>Meios de Pagamento</h2>
+                  <p>
+                    <div class="myframegmap">
+                      <img width="449" height="142" src="https://inshapefit.com.br/wp-content/uploads/2018/02/formas-de-pagamento-4.png" class="vc_single_image-img attachment-full" alt="" srcset="https://inshapefit.com.br/wp-content/uploads/2018/02/formas-de-pagamento-4.png 449w, https://inshapefit.com.br/wp-content/uploads/2018/02/formas-de-pagamento-4-300x95.png 300w, https://inshapefit.com.br/wp-content/uploads/2018/02/formas-de-pagamento-4-24x8.png 24w, https://inshapefit.com.br/wp-content/uploads/2018/02/formas-de-pagamento-4-36x11.png 36w, https://inshapefit.com.br/wp-content/uploads/2018/02/formas-de-pagamento-4-48x15.png 48w" sizes="(max-width: 449px) 100vw, 449px">
+                    </div>
+                  </p>
+                </div>
+                <div class="col-sm-4 ">
+                  <h2>Contatos</h2>
+                  <p>
+                    <i class="icon-whatsapp"></i><a href="tel:0123456789"> +0123456789</a><br>
+                    <i class="icon-at"></i><a href="mailto:abc@abc.com"> abc@abc.com</a><br>
+                    <i class="icon-facebook-square"></i><a href="https://www.facebook.com.br"> Facebook</a><br>
+                    <i class="icon-instagram"></i><a href="https://www.instagram.com.br"> Instagram</a><br>
+                  </p>
+                  <br>
+                </div>
+              </div>
+              <div class="clear30"></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer2">
+          <div class="container-fluid">
+            <div class="container">
+              <div class="row">
+                <div class="clear30"></div>
+                <div class="col-sm-12 text-center">
+                  <p>
+                    <strong>copyright © 2013-2018 All right reserved.</strong>
+                  </p>
+                </div>
+                <div class="clear30"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./dist/js/app.js"></script>
+  <!-- <script type="text/javascript" src="./dist/js/api.js"></script> -->
+  <script type="text/javascript" src="./dist/js/routes.js"></script>
+</body>
+</html>
